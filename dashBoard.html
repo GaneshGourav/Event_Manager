@@ -6,41 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <style>
-        #dashboard-form-wrapper{
+        #dashboard-form-wrapper {
             border: 1px solid teal;
-            width: 40%;
-            margin: auto;
+            width: 20%;
+            /* margin: auto; */
             text-align: center;
             padding: 30px;
             border-radius: 5px;
-            margin-top: 10%;
+            /* margin-top: 10%; */
         }
-        #event-text{
+#event-details{
+    border: 1px solid teal;
+    text-align: center;
+    border-radius: 5px;
+}
+        #event-text  {
             color: teal;
+        }
+        #event-details-text{
+            color: teal;
+        }
+        table{
+            border: 1px solid red;
+            border-collapse: collapse;
+            color: blue;
+            text-align: left;
+            
+        }
+        thead th {
+            border: 1px solid teal;
+           
+        }
+        tbody td{
+            border: 1px solid teal;
+           
+            
         }
     </style>
 </head>
 
 <body>
-    <div id="dashboard-form-wrapper">
-        <h4 id="event-text">Event Form</h4>
-        <form id="event-form">
-            <input type="text" name="image" id="event-poster" placeholder="image address" autofocus required> <br><br>
-            <input type="text" name="event" id="event-name" placeholder="event name" autofocus required> <br><br>
-            <textarea name="" id="event-description" placeholder="event description" required></textarea><br><br>
-            <input type="date" id="event-date"><br><br>
-            <input type="text" id="event-location" placeholder="event location"><br><br>
-            <select name="event-category" id="event-category" required>
-                <option value="">Select category</option>
-                <option value="music">Music</option>
-                <option value="sports">Sports</option>
-                <option value="workshop">Workshops</option>
-            </select><br><br>
-            <input type="number" id="event-price" placeholder="event-price" required><br><br>
-            <button type="submit">Add Event</button>
+    <div style="display: flex; border: 1px solid red; justify-content: space-evenly;">
+        <div id="dashboard-form-wrapper">
 
+            <h4 id="event-text">Event Form</h4>
+            <form id="event-form">
+                <input type="text" name="image" id="event-poster" placeholder="image address" autofocus required>
+                <br><br>
+                <input type="text" name="event" id="event-name" placeholder="event name" autofocus required> <br><br>
+                <textarea name="" id="event-description" placeholder="event description" required></textarea><br><br>
+                <input type="date" id="event-date"><br><br>
+                <input type="text" id="event-location" placeholder="event location"><br><br>
+                <select name="event-category" id="event-category" required>
+                    <option value="">Select category</option>
+                    <option value="music">Music</option>
+                    <option value="sports">Sports</option>
+                    <option value="workshop">Workshops</option>
+                </select><br><br>
+                <input type="number" id="event-price" placeholder="event-price" required><br><br>
+                <button type="submit">Add Event</button>
+            </form>
+        </div>
+        <div id="event-details">
+            <h3 id="event-details-text">Event Details</h3>
+            <table>
+                <thead>
 
-        </form>
+                    <th>name</th>
+                    <th>description</th>
+                    <th>Date</th>
+                    <th>location</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+
+                </thead>
+                <tbody id="table-body">
+                    <!-- text goes here -->
+                </tbody>
+            </table>
+
+        </div>
 
     </div>
     <script src="Script/dashBoard.js"></script>
