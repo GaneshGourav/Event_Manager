@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #main-container {
+            border: 1px solid red;
+            text-align: center;
+            width: 25%;
+            margin: auto;
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 12%;
+        }
+
+        #admin-text {
+            color: teal;
+        }
+
+        #login-btn {
+            width: 40%;
+            color: teal;
+            padding: 4x;
+      font-weight: bold;
+      font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <h4 id="admin-text">Admin Login</h4>
+        <div id="login-form-wrapper">
+            <form id="login-form">
+                <input type="email" placeholder="Enter the E-mail" id="admin-email" required autocomplete="email"
+                    autofocus> <br> <br>
+                <input type="password" placeholder="Enter the password" id="admin-pass" required
+                    autocomplete="current-password" autofocus> <br> <br>
+                <button id="login-btn" type="submit">Login</button> <br><br>
+            </form>
+        </div>
+    </div>
+    <script src="Script/index.js"></script>
+
+</body>
+
+</html>

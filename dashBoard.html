@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        #dashboard-form-wrapper{
+            border: 1px solid teal;
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 10%;
+        }
+        #event-text{
+            color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dashboard-form-wrapper">
+        <h4 id="event-text">Event Form</h4>
+        <form id="event-form">
+            <input type="text" name="image" id="event-poster" placeholder="image address" autofocus required> <br><br>
+            <input type="text" name="event" id="event-name" placeholder="event name" autofocus required> <br><br>
+            <textarea name="" id="event-description" placeholder="event description" required></textarea><br><br>
+            <input type="date" id="event-date"><br><br>
+            <select name="event-category" id="event-category" required>
+                <option value="">Select category</option>
+                <option value="music">Music</option>
+                <option value="sports">Sports</option>
+                <option value="workshop">Workshops</option>
+            </select><br><br>
+            <input type="number" id="event-price" placeholder="event-price" required><br><br>
+            <button type="submit">Add Event</button>
+
+
+        </form>
+
+    </div>
+    <script src="Script/dashBoard.js"></script>
+</body>
+
+</html>
